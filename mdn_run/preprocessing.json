@@ -1,0 +1,31 @@
+{
+  "continuous_target_names": [
+    "L_km",
+    "beta2_ps2_km",
+    "gamma_W_km",
+    "loss_dB_km",
+    "P0_W",
+    "T0_ps"
+  ],
+  "continuous_target_indices": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6
+  ],
+  "input_channels": [
+    "input_temporal_intensity",
+    "input_spectral_intensity",
+    "output_temporal_intensity",
+    "output_spectral_intensity"
+  ],
+  "pulse_type": {
+    "0": "Gaussian",
+    "1": "sech"
+  },
+  "time_vector_start": -400.0,
+  "time_vector_end": 399.609375,
+  "time_vector_length": 2048
+}

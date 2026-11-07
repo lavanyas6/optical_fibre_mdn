@@ -1,0 +1,31 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Temporary editor files
+*.swp
+*.swo
+*~
+
+# Temporary logs
+*.log
+cat >> .gitignore <<'EOF'
+
+# macOS files
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+EOF

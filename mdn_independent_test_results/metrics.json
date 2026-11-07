@@ -1,0 +1,57 @@
+{
+  "test_dataset": "/Users/lavanya/Desktop/nlse_tnn_test_independent.h5",
+  "model_checkpoint": "/Users/lavanya/Desktop/mdn_run/best_mdn.pt",
+  "n_test_samples": 10000,
+  "device": "cpu",
+  "mdn_nll_normalized": 0.8380396429061889,
+  "pulse_type_accuracy": 0.997,
+  "pulse_type_confusion_matrix_rows_actual_cols_predicted": [
+    [
+      4998,
+      2
+    ],
+    [
+      28,
+      4972
+    ]
+  ],
+  "continuous_targets": {
+    "L_km": {
+      "MAE": 5.249157905578613,
+      "RMSE": 6.728043556213379,
+      "MAE_percent_of_parameter_range": 7.4987969398498535
+    },
+    "beta2_ps2_km": {
+      "MAE": 1.887895107269287,
+      "RMSE": 2.358109474182129,
+      "MAE_percent_of_parameter_range": 9.439475059509277
+    },
+    "gamma_W_km": {
+      "MAE": 0.7957653999328613,
+      "RMSE": 0.9506843090057373,
+      "MAE_percent_of_parameter_range": 19.894134521484375
+    },
+    "loss_dB_km": {
+      "MAE": 0.03147635981440544,
+      "RMSE": 0.0387466698884964,
+      "MAE_percent_of_parameter_range": 18.515504837036133
+    },
+    "P0_W": {
+      "MAE": 0.015070829540491104,
+      "RMSE": 0.017968039959669113,
+      "MAE_percent_of_parameter_range": 16.745365142822266
+    },
+    "T0_ps": {
+      "MAE": 0.5046340823173523,
+      "RMSE": 0.5863904356956482,
+      "MAE_percent_of_parameter_range": 2.5231704711914062
+    }
+  },
+  "notes": [
+    "No training or parameter updates are performed by this script.",
+    "Input/target normalization is taken from the saved training checkpoint.",
+    "MAE/RMSE use the mixture-weighted mean in original parameter units.",
+    "D_ps_nm_km is derived from beta2 and is not independently predicted.",
+    "A different LHS seed creates a fresh sample but does not alone prove zero overlap with training samples."
+  ]
+}

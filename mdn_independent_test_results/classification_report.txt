@@ -1,0 +1,14 @@
+Accuracy: 99.970%
+
+Confusion matrix (rows=true, columns=predicted):
+[[4997    3]
+ [   0 5000]]
+
+              precision    recall  f1-score   support
+
+Gaussian (0)       1.00      1.00      1.00      5000
+    Sech (1)       1.00      1.00      1.00      5000
+
+    accuracy                           1.00     10000
+   macro avg       1.00      1.00      1.00     10000
+weighted avg       1.00      1.00      1.00     10000
